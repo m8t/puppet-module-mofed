@@ -12,7 +12,7 @@ fixtures:
     systemd:
       repo: https://github.com/voxpupuli/puppet-systemd.git
     rsyslog:
-      repo: https://github.com/saz/puppet-rsyslog.git
+      repo: https://github.com/voxpupuli/puppet-rsyslog.git
     network:
       repo: https://github.com/example42/puppet-network.git
       ref: v3.6.1

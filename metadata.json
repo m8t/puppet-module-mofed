@@ -21,8 +21,8 @@
       "version_requirement": ">= 0.3.0 <7.0.0"
     },
     {
-      "name": "saz/rsyslog",
-      "version_requirement": ">= 3.5.0 <6.0.0"
+      "name": "puppet/rsyslog",
+      "version_requirement": ">= 4.0.0 <8.0.0"
     },
     {
       "name": "example42/network",

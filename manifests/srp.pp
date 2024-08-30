@@ -71,10 +71,10 @@ class mofed::srp (
     require => Package['srptools'],
   }
 
-  rsyslog::snippet { '60_srp_daemon.conf':
-    ensure  => $file_ensure,
-    content => template('mofed/srp/srp_daemon.rsyslog.conf.erb'),
-    require => Package['srptools'],
+  if ($file_ensure != 'absent') {
+    rsyslog::component::custom_config { '60_srp_daemon.conf':
+      content => template('mofed/srp/srp_daemon.rsyslog.conf.erb'),
+    }
   }
 
   # Template uses:
